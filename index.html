@@ -2,145 +2,172 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invoice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mobile Invoice</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1566b08547.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <main class=" flex justify-center items-center p-4">
-        <section class=" w-[100%] h-[100%]">
-            <div class="flex gap-[0.2rem] justify-center items-center">
-                <div class="w-[60px]">
-                    <img src="files/kudiPay-logo.png" alt="" class="w-[100%] object-cover object-center">
+<body class="bg-gray-50 ">
+    <main class="bg-white rounded-2xl shadow-lg p-2">
+        <!-- Header Section -->
+        <section class="mb-4">
+            <div class="flex justify-center items-center gap-1 mb-4">
+                <div class="w-14">
+                    <img src="files/kudiPay-logo.png" alt="Logo" class="w-full">
                 </div>
-                <div class="flex flex-col justify-center">
-                    <h1 class="text-2xl font-bold text-[#3b5361] flex">Bubble <span class="text-[#FC5944]">Pay</span></h1>
+                <h1 class="text-2xl font-bold text-[#3b5361]">
+                    Bubble <span class="text-[#FC5944]">Pay</span>
+                </h1>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+                <p class="text-sm font-medium text-slate-600">
+                    Invoice for: <span class="font-bold block mt-1">Mr. Duah</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- Invoice Details -->
+        <section class="space-y-4 p-4 bg-gray-100 rounded-xl">
+            <div class="space-y-4">
+                <!-- Transaction Date -->
+                <div class="flex flex-col gap-[0.1rem]  rounded-lg">
+                    <p class="text-sm font-bold text-slate-600">Transaction Date</p>
+                    <p class="text-sm text-slate-400">07-SEP-2024 22:00</p>
                 </div>
-            </div>
-            <div class="mt-[1rem]">
-                <p class="text-[14px] pl-[0.5rem] font-medium text-slate-600">This is the invoice for <span class="font-bold">Mr. Duah</span> </p>
-            </div>
-            <div class="">
-                <div class="">
-                    <div class="flex justify-between items-center my-[0.5rem] border-b border-slate-200 p-[0.6rem]">
-                        <div class="basis-[40%]">
-                            <p class="text-slate-600 font-bold text-[14px]">Transaction Date</p>
-                        </div>
-                        <div class="basis-[60%]">
-                            <p class="text-slate-400 text-[14px]">07-SEP-2024 22:00</p>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-center my-[0.5rem] border-b border-slate-200 p-[0.6rem]">
-                        <div class="basis-[40%]">
-                            <p class="text-slate-600 font-bold text-[14px]">Invoice ID</p>
-                        </div>
-                        <div class="basis-[60%]">
-                            <p class="text-slate-400 text-[14px]">FF201ED810001</p>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-start my-[0.5rem] border-b border-slate-200 p-[0.6rem]">
-                        <div class="basis-[40%]">
-                            <p class="text-slate-600 font-bold text-[14px]">Items</p>
-                        </div>
-                        <div class="basis-[60%]">
-                            <ul class="text-slate-400 text-[14px] list-disc pl-[1rem]">
-                                <li>Porridge</li>
-                                <li>Koosie</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-start my-[0.5rem] border-b border-slate-200 p-[0.6rem]">
-                        <div class="basis-[40%]">
-                            <p class="text-slate-600 font-bold text-[14px]">Description</p>
-                        </div>
-                        <div class="basis-[60%]">
-                            <p class="text-slate-400 text-[14px]">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-start my-[0.5rem] border-b border-slate-200 p-[0.6rem]">
-                        <div class="basis-[40%]">
-                            <p class="text-slate-600 font-bold text-[14px]">Quantity</p>
-                        </div>
-                        <div class="basis-[60%]">
-                            <p class="text-slate-400 text-[14px]">
-                                3 pieces 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-start my-[0.5rem] border-b border-slate-200 p-[0.6rem]">
-                        <div class="basis-[40%]">
-                            <p class="text-slate-600 font-bold text-[14px]">Unit Price</p>
-                        </div>
-                        <div class="basis-[60%]">
-                            <p class="text-slate-400 text-[14px]">
-                                GHS 100
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-start my-[0.5rem] border-b border-slate-200 p-[0.6rem]">
-                        <div class="basis-[40%]">
-                            <p class="text-slate-600 font-bold text-[14px]">Tax</p>
-                        </div>
-                        <div class="basis-[60%]">
-                            <p class="text-slate-400 text-[14px]">
-                                GHS 0.00
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-start my-[0.5rem] border-b border-slate-200 p-[0.6rem]">
-                        <div class="basis-[40%]">
-                            <p class="text-slate-600 font-bold text-[14px]">Amount</p>
-                        </div>
-                        <div class="basis-[60%]">
-                            <p class="text-slate-400 text-[14px]">
-                                GHS 1000
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex justify-between p-[0.6rem] items-start my-[0.5rem] border-b border-slate-200 ">
-                        <div class="basis-[40%] ">
-                            <p class="text-slate-600  font-bold text-[14px]">Status</p>
-                        </div>
-                        <div class="basis-[60%] ">
-                            <p class="text-slate-400 font-bold text-[14px]">
-                                OVERDUE
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-start my-[0.5rem] border-b border-slate-200 p-[0.6rem]">
-                        <div class="basis-[40%]">
-                            <p class="text-slate-600 font-bold text-[20px]">Total</p>
-                        </div>
-                        <div class="basis-[60%]">
-                            <p class="text-slate-400 font-bold text-[20px]">
-                                0.00
-                            </p>
+
+                <!-- Invoice ID -->
+                <div class="flex flex-col gap-[0.1rem]">
+                    <p class="text-sm font-bold text-slate-600">Invoice ID</p>
+                    <p class="text-sm text-slate-400">FF201ED810001</p>
+                </div>
+
+                <!-- Description Textarea -->
+                <div class="flex flex-col gap-[0.1rem] items-start">
+                    <p class="text-sm font-bold text-slate-600">Description</p>
+                    <textarea 
+                        class="w-[100%] text-sm text-slate-400 bg-transparent resize-none border rounded-lg p-2" 
+                        rows="2"
+                        disabled
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates quod veritatis quae temporibus </textarea>
+                </div>
+
+                <!-- Toggleable Items List -->
+                <div class="relative">
+                    <div class="flex flex-col gap-[0.1rem] items-start">
+                        <p class="text-sm font-bold text-slate-600">Items</p>
+                        <div class="w-[100%]">
+                            <div class="relative">
+                                <ul class="text-sm text-slate-400 list-disc-none pl-4 max-h-12 overflow-y-hidden transition-all duration-300" id="itemsList">
+                                    <li>Porridge</li>
+                                    <li>Koosie</li>
+                                    <li>Jollof Rice</li>
+                                    <li>Fried Chicken</li>
+                                    <li>Vegetable Salad</li>
+                                    <li>Fruit Juice</li>
+                                </ul>
+                                <div class="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-gray-50 pointer-events-none" id="fadeOverlay"></div>
+                            </div>
+                            <button onclick="toggleItems()" class="text-[#005DD8] text-xs font-bold mt-1 flex items-center gap-1">
+                                Show more
+                                <i class="fas fa-chevron-down text-xs transition-transform" id="chevron"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
+
+                <!-- Quantity -->
+                <div class="flex justify-between">
+                    <p class="text-sm font-bold text-slate-600">Quantity</p>
+                    <p class="text-sm text-slate-400">3 </p>
+                </div>
+
+                <!-- Unit Price -->
+                <div class="flex justify-between">
+                    <p class="text-sm font-bold text-slate-600">Unit Price</p>
+                    <p class="text-sm text-slate-400">GHS 100</p>
+                </div>
+
+                <!-- Tax -->
+                <div class="flex justify-between">
+                    <p class="text-sm font-bold text-slate-600">Tax</p>
+                    <p class="text-sm text-slate-400">GHS 0.00</p>
+                </div>
+
+                <!-- Amount -->
+                <div class="flex justify-between">
+                    <p class="text-sm font-bold text-slate-600">Amount</p>
+                    <p class="text-sm text-slate-400">GHS 1000</p>
+                </div>
+
+                <!-- Status -->
+                <div class="flex justify-between">
+                    <p class="text-sm font-bold text-slate-600">Status</p>
+                    <span class="bg-red-100 text-red-600 px-3 py-1 rounded-full text-xs font-bold">
+                        OVERDUE
+                    </span>
+                </div>
             </div>
-            <div class="my-[1rem]">
-                <button class="inline-block bg-[#FC5944]  px-[1rem] p-[0.5rem] rounded-[60px] w-[100%]">
-                    <a href="payment-methods.html" class="no-underline text-white uppercase font-bold text-[13px]">pay now</a>
+
+            <!-- Total Amount -->
+            <div class="pt-4 mt-4 border-t border-gray-200">
+                <div class="flex justify-between items-center">
+                    <p class="text-lg font-bold text-slate-600">Total</p>
+                    <p class="text-lg font-bold text-[#FC5944]">GHS 1000.00</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Action Buttons -->
+        <section class="mt-8 space-y-4">
+            <button class="w-full bg-[#FC5944] hover:bg-[#e54a35] transition-colors py-3 rounded-full shadow-md">
+                <a href="payment-methods.html" class="text-white uppercase font-bold text-sm block">
+                    Pay Now
+                </a>
+            </button>
+
+            <p class="text-xs text-center text-gray-500">
+                <a href="#!" class="text-[#005DD8] underline font-bold">Sign In</a> 
+                to view History
+            </p>
+        </section>
+
+        <!-- App Downloads -->
+        <section class="mt-8 text-center">
+            <div class="bg-gray-100 p-4 rounded-xl shadow-inner">
+                <p class="text-xs text-gray-600 mb-3">Get better experience with our app</p>
+                <button class="bg-[#005DD8] text-white px-6 py-2 rounded-full shadow-sm text-xs font-bold">
+                    Install App
                 </button>
-            </div>
-            <p class="text-[13px] text-center"><a href="#!" class="text-[#005DD8] underline font-bold">Sign In</a> to view your Invoice History</p>
-            <div class="flex justify-center items-center">
-                <button class="mt-[1rem] text-[12px] bg-[#005DD8] py-[0.3rem] px-[0.5rem] text-white rounded">Install App</button>
-            </div>
-            <div class="flex gap-[0.5rem] m-0 p-0 justify-center items-center w-[100%]">
-                <div class="w-[120px]">
-                    <img src="files/google-play.png" alt="" class="w-[100%] object-cover object-center">
-                </div>
-                <div class="w-[120px]">
-                    <img src="files/apple-store.png" alt="" class="w-[100%] object-cover object-center">
+                
+                <div class="flex m-0 p-0 justify-center items-center gap-3 mt-4 w-full">
+                    <div class="w-[100px] ">
+                        <img src="files/apple-store.png" alt="App Store" class="w-[100%] object-cover object-center">
+                    </div>
+                    <div class="w-[100px]">
+                        <img src="files/google-play-1.png" alt="App Store" class="w-[100%] h-auto object-cover object-center">
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <script>
+        function toggleItems() {
+            const itemsList = document.getElementById('itemsList');
+            const chevron = document.getElementById('chevron');
+            const fadeOverlay = document.getElementById('fadeOverlay');
+            
+            itemsList.classList.toggle('max-h-12');
+            itemsList.classList.toggle('max-h-[500px]');
+            chevron.classList.toggle('rotate-180');
+            fadeOverlay.classList.toggle('opacity-0');
+            
+            // Update button text
+            const button = document.querySelector('[onclick="toggleItems()"]');
+            button.innerHTML = button.innerHTML.includes('more') ? 
+                'Show less <i class="fas fa-chevron-up text-xs transition-transform" id="chevron"></i>' : 
+                'Show more <i class="fas fa-chevron-down text-xs transition-transform" id="chevron"></i>';
+        }
+    </script>
 </body>
 </html>
