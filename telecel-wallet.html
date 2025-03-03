@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone number</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1566b08547.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class=" flex justify-center items-center p-4">
+        <section class=" w-[100%] h-[100%]">
+            <div class="flex flex-col gap-[0.2rem] justify-center items-center">
+                <div class="w-[60px]">
+                    <img src="files/kudiPay-logo.png" alt="" class="w-[100%] object-cover object-center">
+                </div>
+                <div class="flex flex-col justify-center">
+                    <h1 class="text-2xl font-bold text-[#3b5361] flex">Bubble <span class="text-[#FC5944]">Pay</span></h1>
+                </div>
+            </div>
+            <div class="mt-[1rem] flex justify-between items-center">
+                <div class="flex gap-[0.3rem] items-center">
+                    <div class="w-[50px] h-[50px] flex justify-center items-center border border-slate-200 rounded-[100%]">
+                        <img src="files/T-Cash Red.png" alt="" class="w-[100%] object-cover object-center rounded-[100%]">
+                    </div>
+                    <div class="flex flex-col p-0 m-0">
+                        <p class="text-[14px] font-bold text-slate-600 p-0 m-0">BubblePay Wallet</p>
+                        <p class="text-[12px] font-bold text-slate-400 p-0 m-0">Telecel Cash</p>
+                    </div>
+                </div>
+                <p class="text-[#E34C00]"><a href="payment-methods.html">Change</a></p>
+            </div>
+
+            <div class="mt-[1rem]">
+                <form action="" method="post" class="w-[100%] flex flex-col gap-[1rem]">
+                    <div class="flex gap-[0.5rem] justify-center items-center pl-[1rem] border border-slate-200 bg-slate-50 rounded-[35px]">
+                        <i class="fa fa-solid fa-phone text-slate-400"></i>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter your number" class="w-[100%] text-[14px] font-medium bg-transparent p-[0.7rem] outline-none">
+                    </div>
+                    <div class="flex gap-[0.5rem] justify-center items-center pl-[1rem] border border-slate-200 bg-slate-50 rounded-[35px]">
+                        <input type="number" name="cash" id="cash" value="GHS 1000" disabled placeholder="GHS 1000" class="w-[100%] text-[14px] font-bold bg-transparent p-[0.7rem] outline-none">
+                    </div>
+
+                    <p class="text-red-400 text-center py-[0.5rem]"><a href="#!">Need help with payment?</a></p>
+                    <button class="inline-block bg-[#FC5944]  px-[1rem] p-[0.5rem] rounded-[60px] w-[100%]">
+                        <a href="otp-approval.html" class="no-underline text-white uppercase font-bold text-[13px]">pay (GHS 1000)</a>
+                    </button>
+                </form>
+            </div>
+          
+        </section>
+    </main>
+</body>
+</html>
