@@ -27,7 +27,7 @@
         </section>
 
         <!-- Invoice Details -->
-        <section class="space-y-4 p-4 bg-gray-100 rounded-xl shadow-inner">
+        <section class="space-y-4 p-4 bg-gray-50 rounded-xl shadow-sm border border-slate-200">
             <div class="space-y-4">
                 <!-- Transaction Date -->
                 <div class="flex flex-col gap-[0.1rem]  rounded-lg">
@@ -58,12 +58,12 @@
                         <div class="w-[100%]">
                             <div class="relative">
                                 <ul class="text-sm text-slate-400 list-disc-none max-h-12 overflow-y-hidden transition-all duration-300" id="itemsList">
-                                    <li class="border-b py-[0.2rem]  border-gray-200">Porridge</li>
-                                    <li class="border-b py-[0.2rem]  border-gray-200">Koosie</li>
-                                    <li class="border-b py-[0.2rem]  border-gray-200">Jollof Rice</li>
-                                    <li class="border-b py-[0.2rem]  border-gray-200">Fried Chicken</li>
-                                    <li class="border-b py-[0.2rem]  border-gray-200">Vegetable Salad</li>
-                                    <li class="border-b py-[0.2rem]  border-gray-200">Fruit Juice</li>
+                                    <li class="border-b py-[0.2rem] pl-[0.5rem] border-gray-200">Porridge</li>
+                                    <li class="border-b py-[0.2rem] pl-[0.5rem] border-gray-200">Koosie</li>
+                                    <li class="border-b py-[0.2rem] pl-[0.5rem] border-gray-200">Jollof Rice</li>
+                                    <li class="border-b py-[0.2rem] pl-[0.5rem] border-gray-200">Fried Chicken</li>
+                                    <li class="border-b py-[0.2rem] pl-[0.5rem] border-gray-200">Vegetable Salad</li>
+                                    <li class="border-b py-[0.2rem] pl-[0.5rem] border-gray-200">Fruit Juice</li>
                                 </ul>
                                 <div class="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-gray-50 pointer-events-none" id="fadeOverlay"></div>
                             </div>
@@ -76,33 +76,33 @@
                 </div>
 
                 <!-- Quantity -->
-                <div class="flex justify-between">
+                <div class="flex flex-col gap-[0.1rem]">
                     <p class="text-sm font-bold text-slate-600">Quantity</p>
                     <p class="text-sm text-slate-400">3 </p>
                 </div>
 
                 <!-- Unit Price -->
-                <div class="flex justify-between">
+                <div class="flex flex-col gap-[0.1rem]">
                     <p class="text-sm font-bold text-slate-600">Unit Price</p>
                     <p class="text-sm text-slate-400">GHS 100</p>
                 </div>
 
                 <!-- Tax -->
-                <div class="flex justify-between">
+                <div class="flex flex-col gap-[0.1rem]">
                     <p class="text-sm font-bold text-slate-600">Tax</p>
                     <p class="text-sm text-slate-400">GHS 0.00</p>
                 </div>
 
                 <!-- Amount -->
-                <div class="flex justify-between">
+                <div class="flex flex-col gap-[0.1rem]">
                     <p class="text-sm font-bold text-slate-600">Amount</p>
                     <p class="text-sm text-slate-400">GHS 1000</p>
                 </div>
 
                 <!-- Status -->
-                <div class="flex justify-between">
+                <div class="flex flex-col gap-[0.1rem]">
                     <p class="text-sm font-bold text-slate-600">Status</p>
-                    <span class="bg-red-100 text-red-600 px-3 py-1 rounded-full text-xs font-bold">
+                    <span class="bg-red-100 w-[80px] text-center text-red-600 px-3 py-1 rounded-full text-xs font-bold">
                         OVERDUE
                     </span>
                 </div>
@@ -110,7 +110,7 @@
 
             <!-- Total Amount -->
             <div class="pt-4 mt-4 border-t border-gray-200">
-                <div class="flex justify-between items-center">
+                <div class="flex flex-col gap-[0.1rem]">
                     <p class="text-lg font-bold text-slate-600">Total</p>
                     <p class="text-lg font-bold text-[#FC5944]">GHS 1000.00</p>
                 </div>
@@ -118,7 +118,7 @@
         </section>
 
         <!-- Action Buttons -->
-        <section class="mt-8 space-y-4">
+        <section class="mt-8 space-y-2">
             <button class="w-full bg-[#FC5944] hover:bg-[#e54a35] transition-colors py-3 rounded-full shadow-md">
                 <a href="payment-methods.html" class="text-white uppercase font-bold text-sm block">
                     Pay Now
@@ -132,13 +132,9 @@
         </section>
 
         <!-- App Downloads -->
-        <section class="mt-8 text-center">
-            <div class="bg-gray-100 p-4 rounded-xl shadow-inner">
-                <p class="text-xs text-gray-600 mb-3">Get better experience with our app</p>
-                <button class="bg-[#005DD8] text-white px-6 py-2 rounded-full shadow-sm text-xs font-bold">
-                    Install App
-                </button>
-                
+        <section class="mt-4 text-center">
+            <div class="100 p-4 rounded-xl ">
+                <p class="text-xs text-gray-600 mb-3">Get better experience with our Native App</p>
                 <div class="flex m-0 p-0 justify-center items-center gap-3 mt-4 w-full">
                     <div class="w-[100px] ">
                         <img src="files/apple-store.png" alt="App Store" class="w-[100%] object-cover object-center">
