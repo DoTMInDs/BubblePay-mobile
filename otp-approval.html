@@ -31,7 +31,8 @@
                 <form action="" method="post" class="w-[100%] flex flex-col gap-[1rem]">
                     <div class="flex gap-[0.5rem] justify-center items-center pl-[1rem] border border-slate-200 bg-slate-50 rounded-[35px]">
                         <i class="fa fa-solid fa-key text-slate-400"></i>
-                        <input type="tel" name="otp" id="otp" placeholder="Enter OTP" class="w-[100%] text-[14px] font-medium bg-transparent p-[0.7rem] outline-none">
+                        <input type="tel" name="otp" id="otp" placeholder="Enter OTP" inputmode="numeric" class="w-[100%] text-[14px] font-medium bg-transparent p-[0.7rem] outline-none">
+                        <i id="toggleEye"  class="fa fa-solid fa-eye-slash pr-[1rem] cursor-pointer text-[14px] text-slate-400" onclick="toggleOTPVisibility()"></i>
                     </div>
                     <p class="text-red-400 text-center py-[0.5rem]"><a href="payment-methods.html">Resend OTP</a></p>
                     <button class="inline-block bg-[#FC5944]  px-[1rem] p-[0.5rem] rounded-[60px] w-[100%]">
@@ -42,5 +43,22 @@
          
         </section>
     </main>
+
+    <script>
+        function toggleOTPVisibility() {
+            const otpInput = document.getElementById('otp');
+            const eyeIcon = document.getElementById('toggleEye');
+
+            if(otpInput.type == 'password') {
+                otpInput.type = 'text';
+                eyeIcon.classList.remove('fa-eye-slash');
+                eyeIcon.classList.add('fa-eye');
+            }else {
+                otpInput.type = 'password';
+                eyeIcon.classList.remove('fa-eye');
+                eyeIcon.classList.add('fa-eye-slash');
+            }
+        }
+    </script>
 </body>
 </html>

@@ -37,15 +37,23 @@
                     <div class="">
                         <p class="text-center font-bold text-slate-600 text-[14px]">Enter your card details to pay</p>
                     </div>
-                    <div class="">
-                        <input type="tel" name="name" id="name" placeholder="Name on Card" class="w-[100%] text-[14px] font-medium bg-transparent py-[0.7rem] px-[1rem] outline-none border border-slate-200 rounded-[35px]">
+                    <div class="flex items-center text-slate-400 relative">
+                        <input type="tel" name="name" id="name" placeholder="Name on Card" class="w-[100%] text-[14px] font-medium bg-transparent py-[0.7rem] pl-[2.5rem] outline-none border border-slate-200 rounded-[35px]">
+                        <i class="fa-solid fa-user absolute text-[14px] left-[10px]"></i>
                     </div>
-                    <div class="">
-                        <input type="tel" name="card" id="card" placeholder="0000 0000 0000 0000" class="w-[100%] text-[14px] font-medium bg-transparent py-[0.7rem] px-[1rem] outline-none border border-slate-200 rounded-[35px]">
+                    <div class="flex items-center text-slate-400 relative">
+                        <input type="tel" name="card" id="card" placeholder="0000 0000 0000 0000" class="w-[100%] text-[14px] font-medium bg-transparent py-[0.7rem] px-[2.5rem] outline-none border border-slate-200 rounded-[35px]">
+                        <i class="fa-solid fa-credit-card absolute text-[14px] left-[10px]"></i>
                     </div>
                     <div class="flex gap-[0.3rem] w-[100%]">
-                        <input type="text" name="expiry" id="expiry" placeholder="MM/YY" class="w-[50%] text-[14px] font-medium bg-transparent p-[0.7rem] outline-none border border-slate-200 rounded-[35px]">
-                        <input type="text" name="cvv" id="cvv" placeholder="CVV" class="w-[50%] text-[14px] font-medium bg-transparent p-[0.7rem] outline-none border border-slate-200 rounded-[35px]">
+                        <div class="flex items-center text-slate-400 relative">
+                            <input type="text" name="expiry" id="expiry" placeholder="MM/YY" class="w-[100%] text-[14px] font-medium bg-transparent py-[0.7rem] px-[2.5rem] outline-none border border-slate-200 rounded-[35px]">
+                            <i class="fa-solid fa-calendar-days text-[14px] absolute left-[10px]"></i>
+                        </div>
+                        <div class="flex items-center text-slate-400 relative">
+                            <input type="text" name="cvv" id="cvv" placeholder="CVV" class="w-[100%] text-[14px] font-medium bg-transparent py-[0.7rem] px-[2.5rem] outline-none border border-slate-200 rounded-[35px]">
+                            <i class="fa-solid fa-key absolute text-[14px] left-[10px]"></i>
+                        </div>
                     </div>
                     <button class="inline-block bg-[#FC5944]  px-[1rem] p-[0.5rem] rounded-[60px] w-[100%]">
                         <a href="otp-approval.html"" class="no-underline text-white uppercase font-bold text-[13px]">pay (GHS 1000)</a>
