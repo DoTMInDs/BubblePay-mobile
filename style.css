@@ -6,6 +6,8 @@
 body{
     overflow-x: hidden;
 }
+
+
 /* .carousel-container {
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
