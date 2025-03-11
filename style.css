@@ -6,3 +6,56 @@
 body{
     overflow-x: hidden;
 }
+/* .carousel-container {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+.carousel-item {
+    scroll-snap-align: start;
+    flex: 0 0 85%;
+}
+.fade-edge {
+    mask-image: linear-gradient(to right, 
+        transparent 0%, 
+        black 10%, 
+        black 90%, 
+        transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(to right, 
+        transparent 0%, 
+        black 10%, 
+        black 90%, 
+        transparent 100%
+    );
+} */
+
+/* 
+
+    <script>
+        // Touch handling for swiping
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        function handleTouchStart(e) {
+            touchStartX = e.changedTouches[0].screenX;
+        }
+
+        function handleTouchEnd(e) {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }
+
+        function handleSwipe() {
+            const delta = touchStartX - touchEndX;
+            const carousel = document.getElementById('itemsCarousel');
+            
+            if (delta > 50) { // Swipe left
+                carousel.scrollBy({ left: 300, behavior: 'smooth' });
+            } else if (delta < -50) { // Swipe right
+                carousel.scrollBy({ left: -300, behavior: 'smooth' });
+            }
+        }
+
+        // Remove old toggleItems function
+    </script>
+*/

@@ -21,10 +21,10 @@
             </div>
             <div class="bg-gray-50 border border-slate-200 p-4 rounded-lg">
                 <p class="text-sm font-medium text-slate-600">
-                    Invoice for: <span class="font-bold block my-1">Mr. Duah</span>
+                    Invoice for: <span class="font-bold block my-1">Ennam's School fees</span>
                 </p>
                 <hr>
-                <div class="text-sm font-medium text-rose-600 mt-1">
+                <div class="text-sm font-medium text-slate-600 mt-1">
                     Invoice from: 
                     <div class="flex  gap-[0.3rem]">
                         <i class="fa-solid fa-circle-check text-slate-400 text-12px mr-[0.3rem] mt-[0.5rem]"></i>
@@ -64,19 +64,26 @@
                 </div>
 
                 <!-- Toggleable Items List -->
-                <div class="relative">
+                <!-- <div class="relative">
                     <div class="flex flex-col gap-[0.1rem] items-start">
-                        <p class="text-sm font-bold text-slate-600">Items</p>
+                        <div class="flex justify-between w-[100%]">
+                            <p class="text-sm font-bold text-slate-600">Items</p>
+                            <div class="flex justify-between w-full max-w-[150px]">
+                                <p class="text-sm font-bold text-slate-600">Qty</p>
+                                <p class="text-sm font-bold text-slate-600">Unit Price</p>
+                            </div>
+                        </div>
                         <div class="w-[100%]">
-                            <div class="relative">
-                                <ul class="text-sm text-slate-400 list-disc-none max-h-12 overflow-y-hidden transition-all duration-300" id="itemsList">
-                                    <li class="border-b py-[0.2rem] pl-[0.5rem] border-gray-200">Porridge</li>
-                                    <li class="border-b py-[0.2rem] pl-[0.5rem] border-gray-200">Koosie</li>
-                                    <li class="border-b py-[0.2rem] pl-[0.5rem] border-gray-200">Jollof Rice</li>
-                                    <li class="border-b py-[0.2rem] pl-[0.5rem] border-gray-200">Fried Chicken</li>
-                                    <li class="border-b py-[0.2rem] pl-[0.5rem] border-gray-200">Vegetable Salad</li>
-                                    <li class="border-b py-[0.2rem] pl-[0.5rem] border-gray-200">Fruit Juice</li>
-                                </ul>
+                            <div class="relative ">
+                                <div class="flex justify-between w-[100%] text-sm text-slate-400 max-h-12 overflow-y-hidden transition-all duration-300" id="itemsList">
+                                    <div class="">
+                                        <p class="">School fees</p>
+                                    </div>
+                                    <div class="flex justify-between w-full max-w-[150px]">
+                                        <p class="">1</p>
+                                        <p class="">GHS 3,000.00</p>
+                                    </div>
+                                </div>
                                 <div class="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-gray-50 pointer-events-none" id="fadeOverlay"></div>
                             </div>
                             <button onclick="toggleItems()" class="text-rose-400 text-xs font-bold mt-1 flex items-center gap-1">
@@ -85,19 +92,77 @@
                             </button>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <!-- Quantity -->
-                <div class="flex flex-col gap-[0.1rem]">
-                    <p class="text-sm font-bold text-slate-600">Quantity</p>
-                    <p class="text-sm text-slate-400">3 </p>
-                </div>
+                   <!-- Swipable Items Carousel -->
+            <div class="flex flex-col gap-[0.1rem] items-start">
+                <p class="text-sm font-bold text-slate-600 mb-2">Items</p>
+                <div class="relative w-full">
+                    <div class="carousel-container fade-edge flex overflow-x-auto pb-4 space-x-3" 
+                         id="itemsCarousel"
+                         ontouchstart="handleTouchStart(event)"
+                         ontouchend="handleTouchEnd(event)">
+                        <!-- Item Cards -->
+                        <div class="carousel-item bg-white py-3 rounded-xl shadow-sm border border-slate-200">
+                            <div class="flex justify-between items-center border-b border-slate-200 mb-1 px-[0.5rem]">
+                                <p class="text-xs text-slate-400 ">Term 1 - 2024</p>
+                                <p class="text-xs text-slate-400">Qty: 1</p>
+                            </div>
+                            <div class=" w-[180px] p-[0.5rem]">
+                                <div class="flex items-center justify-between">
+                                    <p class="text-sm font-medium text-slate-600">School Fees</p>
+                                </div>
+                                <div class="">
+                                    <p class="text-sm font-medium text-nowrap text-slate-600">GHS 3,000.00</p>
+                                </div>
+                            </div>
+                            <div id="viewMoreBtn" class="text-[12px] cursor-pointer text-blue-900 text-center pt-[0.5rem] border-opacity-20 border-t border-slate-400">
+                                <i class="fa-solid fa-eye"></i>
+                                view
+                            </div>
+                        </div>
+                        <div class="carousel-item bg-white py-3 rounded-xl shadow-sm border border-slate-200">
+                            <div class="flex justify-between items-center border-b border-slate-200 mb-1 px-[0.5rem]">
+                                <p class="text-xs text-slate-400 ">Term 1 - 2024</p>
+                                <p class="text-xs text-slate-400">Qty: 3</p>
+                            </div>
+                            <div class=" w-[180px] p-[0.5rem]">
+                                <div class="flex items-center justify-between">
+                                    <p class="text-sm font-medium text-slate-600">Uniforms</p>
+                                </div>
+                                <div class="">
+                                    <p class="text-sm font-medium text-nowrap text-slate-600">GHS 500.00</p>
+                                </div>
+                            </div>
+                            <div id="viewMoreBtn" class="text-[12px] cursor-pointer text-blue-900 text-center pt-[0.5rem] border-opacity-20 border-t border-slate-400">
+                                <i class="fa-solid fa-eye"></i>
+                                view
+                            </div>
+                        </div>
+                        <div class="carousel-item bg-white py-3 rounded-xl shadow-sm border border-slate-200">
+                            <div class="flex justify-between items-center border-b border-slate-200 mb-1 px-[0.5rem]">
+                                <p class="text-xs text-slate-400 ">Term 1 - 2024</p>
+                                <p class="text-xs text-slate-400">Qty: 10</p>
+                            </div>
+                            <div class=" w-[180px] p-[0.5rem]">
+                                <div class="flex items-center justify-between">
+                                    <p class="text-sm font-medium text-slate-600">Books</p>
+                                </div>
+                                <div class="">
+                                    <p class="text-sm font-medium text-nowrap text-slate-600">GHS 1,000.00</p>
+                                </div>
+                            </div>
+                            <div class="text-[12px] text-blue-900 border-t border-slate-400 border-opacity-20 text-center pt-[0.5rem]">
+                                <i class="fa-solid fa-eye"></i>
+                                view
+                            </div>
+                        </div>
 
-                <!-- Unit Price -->
-                <div class="flex flex-col gap-[0.1rem]">
-                    <p class="text-sm font-bold text-slate-600">Unit Price</p>
-                    <p class="text-sm text-slate-400">GHS 100</p>
+                        <!-- Add more item cards here -->
+                    </div>
                 </div>
+                <!-- <p class="text-xs text-slate-400 mt-1">Swipe left to view more items</p> -->
+            </div>
 
                 <!-- Tax -->
                 <div class="flex flex-col gap-[0.1rem]">
@@ -108,7 +173,7 @@
                 <!-- Amount -->
                 <div class="flex flex-col gap-[0.1rem]">
                     <p class="text-sm font-bold text-slate-600">Amount</p>
-                    <p class="text-sm text-slate-400">GHS 1000</p>
+                    <p class="text-sm text-slate-400">GHS 3,000.00</p>
                 </div>
 
                 <!-- Status -->
@@ -159,23 +224,5 @@
         </section>
     </main>
 
-    <script>
-        function toggleItems() {
-            const itemsList = document.getElementById('itemsList');
-            const chevron = document.getElementById('chevron');
-            const fadeOverlay = document.getElementById('fadeOverlay');
-            
-            itemsList.classList.toggle('max-h-12');
-            itemsList.classList.toggle('max-h-[500px]');
-            chevron.classList.toggle('rotate-180');
-            fadeOverlay.classList.toggle('opacity-0');
-            
-            // Update button text
-            const button = document.querySelector('[onclick="toggleItems()"]');
-            button.innerHTML = button.innerHTML.includes('more') ? 
-                'Show less <i class="fas fa-chevron-up text-xs transition-transform" id="chevron"></i>' : 
-                'Show more <i class="fas fa-chevron-down text-xs transition-transform" id="chevron"></i>';
-        }
-    </script>
 </body>
 </html>
