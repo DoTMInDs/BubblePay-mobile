@@ -4,163 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Mobile Invoice</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/1566b08547.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-gray-50 ">
+<body class="bg-gray-50">
     <main class="bg-white rounded-2xl shadow-lg p-2">
         <section class="mb-4">
             <div class="flex justify-center items-center gap-1 mb-4">
-                <div class="w-14">
-                    <img src="files/kudiPay-logo.png" alt="Logo" class="w-full">
-                </div>
-                <h1 class="text-2xl font-bold flex text-[#3b5361]">
-                    Bubble <span class="text-[#FC5944]">Pay</span>
+                <h1 class="text-[16px] font-bold flex text-[#3b5361]">
+                    KNUST - Entry Registration
                 </h1>
             </div>
             <div class="bg-gray-50 border border-slate-200 p-4 rounded-lg">
                 <div class="">
-                   <p class="text-sm  text-blue-500">
-                        Invoice for: 
-                   </p>
-                    <span class="text-sm font-regular block text-slate-700 my-1 flex justify-between">
-                        Ennam's School fees
-                        <!-- <small class="text-[13px] text-blue-500 ">Class: (6) </small> -->
-                    </span>
+                   <p class="text-sm text-blue-500">Invoice To:</p>
+                    <small class="text-sm font-regular text-slate-700">
+                        Ennam
+                    </small>
                 </div>
-                <hr>
                 <div class=" mt-1">
                     <div class="text-sm  text-blue-500">
                         Invoice from: 
                     </div>
                     <div class="flex text-sm gap-[0.3rem]">
                         <div class="">
-                            <span class=" text-slate-700 block mt-1">Christ Ambassadors School</span>
+                            <span class=" text-slate-700 block mt-1">KNUST - Kumasi</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="space-y-4 p-4 bg-gray-50 rounded-xl shadow-sm border border-slate-200">
-            <div class="space-y-4">
-                <div class="flex flex-col gap-[0.1rem]  rounded-lg">
-                    <p class="text-sm text-blue-500">Transaction Date</p>
-                    <p class="text-sm text-slate-700">07-SEP-2024 22:00</p>
+        <section class="space-y-4 bg-gray-50 rounded-xl shadow-sm border border-slate-200">
+            <div class="space-y-4 py-[0.5rem]">
+                <div class="flex flex-col gap-[0.1rem] px-4 rounded-lg">
+                    <p class="text-sm text-blue-500">Due Date</p>
+                    <p class="text-sm text-slate-700">07-SEP-2024</p>
                 </div>
 
-                <div class="flex flex-col gap-[0.1rem]">
-                    <p class="text-sm text-blue-500">Invoice ID</p>
-                    <p class="text-sm text-slate-700">APZQ - 1ED810001</p>
+                <div class="flex flex-col gap-[0.1rem] px-4">
+                    <p class="text-sm text-blue-500">Invoice Number</p>
+                    <p class="text-sm text-slate-700">AM-2 </p>
                 </div>
 
-                <div class="flex flex-col gap-[0.1rem] items-start">
+                <div class="flex flex-col gap-[0.1rem] items-start px-2">
                     <p class="text-sm text-blue-500">Description</p>
                     <textarea 
                         class="w-[100%] text-sm text-slate-700 bg-transparent resize-none border border-slate-400 border-opacity-10 rounded-lg p-2" 
                         rows="2"
                         disabled
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates quod veritatis</textarea>
+                    >KNUST - Entry Registration </textarea>
                 </div>
-                <div class="flex flex-col gap-[0.1rem] items-start">
-                    <p class="text-sm text-blue-500 mb-2">Items</p>
-                    <div class="relative w-full">
-                        <div class="carousel-container fade-edge flex overflow-x-auto pb-4 space-x-3" 
-                            id="itemsCarousel"
-                            ontouchstart="handleTouchStart(event)"
-                            ontouchend="handleTouchEnd(event)">
-                            <div class="carousel-item bg-white py-3 rounded-xl shadow-sm border border-slate-200">
-                               <div class="">
-                                    <div class="flex justify-between items-center border-b border-slate-200 mb-1 px-[0.5rem]">
-                                        <p class="text-sm text-slate-700">School Fees </p>
-                                    </div>
-                                    <div class=" w-[280px] p-[0.5rem]">
-                                        <div class="flex items-center justify-between">
-                                            <p class="text-xs text-slate-700 ">Unit Price:</p>
-                                            <p class="text-xs text-slate-700 ">GHS 3,000.00</p>
-                                        </div>
-                                        <div class="flex items-center justify-between">
-                                            <p class="text-xs text-slate-700">Qty: </p>
-                                            <p class="text-xs text-slate-700 ">1</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center justify-between border-t border-slate-400 border-opacity-10 px-[0.5rem]">
-                                        <p class="text-sm text-slate-700">Amount: </p>
-                                        <p class="text-sm text-nowrap text-slate-600">GHS 3,000.00</p>
-                                    </div>
-                               </div>
+                <div class="">
+                    <div class="flex justify-between items-center w-full px-4">
+                        <p class="text-sm text-blue-500 mb-2">Items</p>
+                    </div>
+                    <div class="w-full ">
+                        <div class="border-b border-slate-200 px-2 py-[0.5rem]">
+                            <div class="flex justify-between items-center px-[0.5rem]">
+                                <p class="text-sm font-medium text-slate-700">Tuition Fees </p>
                             </div>
-                            <div class="carousel-item bg-white py-3 rounded-xl shadow-sm border border-slate-200">
-                               <div class="">
-                                    <div class="flex justify-between items-center border-b border-slate-200 mb-1 px-[0.5rem]">
-                                        <p class="text-sm text-slate-700">Uniform</p>
-                                       
-                                    </div>
-                                    <div class=" w-[280px] p-[0.5rem]">
-                                        <div class="flex items-center justify-between">
-                                            <p class="text-xs text-slate-700 ">Unit Price:</p>
-                                            <p class="text-xs text-slate-700 ">GHS 300.00</p>
-                                        </div>
-                                        <div class="flex items-center justify-between">
-                                            <p class="text-xs text-slate-700">Qty: </p>
-                                            <p class="text-xs text-slate-700 ">3</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center justify-between border-t border-slate-400 border-opacity-10 px-[0.5rem]">
-                                        <p class="text-sm text-slate-700">Amount: </p>
-                                        <p class="text-sm text-nowrap text-slate-600">GHS 900.00</p>
-                                    </div>
-                               </div>
+                            <div class="space-y-1 w-full p-[0.5rem]">
+                                <div class="flex items-center justify-between">
+                                    <p class="text-xs text-slate-700 ">Unit Price:</p>
+                                    <p class="text-xs text-slate-700 ">GHS 3,000.00</p>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <p class="text-xs text-slate-700">Qty: </p>
+                                    <p class="text-xs text-slate-700 ">1</p>
+                                </div>
+                                <div class="flex items-center justify-between ">
+                                    <p class="text-sm text-slate-700">Amount: </p>
+                                    <p class="text-sm text-nowrap text-slate-600">GHS 3,000.00</p>
+                                </div>
                             </div>
-                            <div class="carousel-item bg-white py-3 rounded-xl shadow-sm border border-slate-200">
-                               <div class="">
-                                    <div class="flex justify-between items-center border-b border-slate-200 mb-1 px-[0.5rem]">
-                                        <p class="text-sm text-slate-700">Books</p>
-                                    </div>
-                                    <div class=" w-[280px] p-[0.5rem]">
-                                        <div class="flex items-center justify-between">
-                                            <p class="text-xs text-slate-700 ">Unit Price:</p>
-                                            <p class="text-xs text-slate-700 ">GHS 50.00</p>
-                                        </div>
-                                        <div class="flex items-center justify-between">
-                                            <p class="text-xs text-slate-700">Qty: </p>
-                                            <p class="text-xs text-slate-700 ">20</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center justify-between border-t border-slate-400 border-opacity-10 px-[0.5rem]">
-                                        <p class="text-sm text-slate-700">Amount: </p>
-                                        <p class="text-sm text-nowrap text-slate-600">GHS 1,000.00</p>
-                                    </div>
-                               </div>
+                        </div>
+                        <div class="border-b border-slate-200 px-2 py-[0.5rem]">
+                            <div class="flex justify-between items-center px-[0.5rem]">
+                                <p class="text-sm font-medium text-slate-700">Hostel Fees </p>
                             </div>
-                          
+                            <div class="space-y-1 w-full p-[0.5rem]">
+                                <div class="flex items-center justify-between">
+                                    <p class="text-xs text-slate-700 ">Unit Price:</p>
+                                    <p class="text-xs text-slate-700 ">GHS 5,000.00</p>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <p class="text-xs text-slate-700">Qty: </p>
+                                    <p class="text-xs text-slate-700 ">1</p>
+                                </div>
+                                <div class="flex items-center justify-between ">
+                                    <p class="text-sm text-slate-700">Amount: </p>
+                                    <p class="text-sm text-nowrap text-slate-600">GHS 5,000.00</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col gap-[0.1rem]">
-                    <p class="text-sm text-blue-500">Tax</p>
-                    <p class="text-sm text-slate-700">GHS 0.00</p>
-                </div>
+            </div>
+            <div class="flex items-center justify-between px-[0.5rem]">
+                <p class="text-sm font-bold text-slate-700">Sub Total: </p>
+                <p class="text-sm text-nowrap font-bold text-slate-600">GHS 6600.00</p>
+            </div>
+            <div class="flex items-center justify-between px-[0.5rem]">
+                <p class="text-sm font-bold text-slate-700">Tax: </p>
+                <p class="text-sm text-nowrap font-bold text-slate-600">GHS 0.10</p>
             </div>
 
-            <div class="pt-4 mt-4 border-t border-gray-200">
-                <div class="flex flex-col gap-[0.1rem]">
+            <div class="p-4 mt-4 ">
+                <div class="flex flex-col items-center gap-[0.1rem]">
                     <p class="text-[20px] font-medium text-blue-500">Total</p>
-                    <p class="text-[25px] font-bold text-slate-700">GHS 4,900.00</p>
+                    <p class="text-[25px] font-bold text-slate-700">GHS 5,150.20</p>
                 </div>
             </div>
         </section>
 
         <section class="mt-8 space-y-2">
-            <button class="w-full bg-[#FC5944] hover:bg-[#e54a35] transition-colors py-3 rounded-full shadow-md">
+            <button class="w-full bg-rose-500 hover:bg-rose-400 duration-300 transition-colors py-[0.5rem] rounded-full shadow-md">
                 <a href="payment-methods.html" class="text-white uppercase font-bold text-sm block">
-                    Pay Now
+                    Sign In
                 </a>
             </button>
 
-            <p class="text-xs text-center text-gray-500">
-                <a href="#!" class="text-blue-500 underline font-bold">Sign In</a> 
-                to view History
+            <p class="text-sm text-center text-gray-500">
+                <a href="#!" class="text-blue-500 underline font-bold"></a> 
+                to make payment
             </p>
         </section>
 
