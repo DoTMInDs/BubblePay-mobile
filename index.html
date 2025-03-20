@@ -2,40 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2">
+    <meta name="description" content="Invoice for a customer">
     <title>Mobile Invoice</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/1566b08547.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-gray-50">
     <main class="bg-gray-50 p-2">
-        <section class="my-4">
-            <div class="flex justify-center items-center gap-1 mb-4">
-                <h1 class="text-[16px] font-bold flex text-slate-700">
-                    KNUST - Entry Registration
-                </h1>
-            </div>
-        </section>
+        <article class="my-4 flex justify-center items-center text-[16px] font-bold text-slate-700">
+            KNUST - Entry Registration
+        </article>
 
         <section class="space-y-4 px-4 bg-white rounded-xl shadow-sm border border-slate-200">
             <div class="space-y-4 py-[0.5rem]">
-                <div class="">
-                    <p class="text-sm text-slate-600">Invoice To:</p>
-                    <small class="text-sm font-regular text-slate-700">
-                        Ennam
-                    </small>
-                </div>
-                <div class=" ">
-                    <div class="text-sm text-slate-600">
-                        Invoice from: 
-                    </div>
-                    <div class="flex text-sm gap-[0.3rem]">
-                        <div class="">
-                            <span class="text-slate-700 block mt-1">KNUST - Kumasi</span>
-                        </div>
-                    </div>
-                </div>
+                <article >
+                    <p class="text-sm font-semibold pb-1 text-slate-600">Invoice From:</p>
+                    <p class="text-sm font-regular text-slate-700">KNUST - Kumasi</p>
+                    <p class="text-sm font-regular text-slate-700">Dansoman, Accra</p>
+                    <p class="text-sm font-regular text-slate-700">0241331155</p>
+                </article>
+                <article >
+                    <p class="text-sm pb-1 font-semibold text-slate-600">Invoice To: </p> 
+                    <p class="text-sm font-regular text-slate-700">Ennam</p>
+                </article>
 
                 <!-- Due-Date -->
                 <div class="flex flex-col gap-[0.1rem]  rounded-lg">
@@ -51,46 +41,36 @@
 
                 <!-- Line-Items -->
                 <div class="">
-                    <div class="flex justify-between items-center w-full ">
-                        <p class="text-sm text-slate-600 ">Items</p>
-                    </div>
-                    <ul class="w-full ">
-                        <li class="list-none border-b border-slate-200 px-2 py-[0.5rem]">
-                            <div class="flex justify-between items-center px-[0.5rem]">
-                                <p class="text-sm font-medium text-slate-700">Tuition Fees </p>
+                    <p class="text-sm text-slate-600 w-full pl-[3px]">Items</p>
+                    <ul class="w-full">
+                        <li class="list-none border-b border-slate-200 pl-1 py-[0.5rem]">
+                            <p class="text-sm font-medium text-slate-600 pl-[0.5rem] pb-[0.5rem]">Tuition Fees </p>
+                            <div class="flex items-center justify-between pl-[0.5rem]">
+                                <p class="text-xs text-slate-600 ">Unit Price:</p>
+                                <p class="text-xs text-slate-700 ">GHS 3,000.00</p>
                             </div>
-                            <div class="space-y-1 w-full p-[0.5rem]">
-                                <div class="flex items-center justify-between">
-                                    <p class="text-xs text-slate-600 ">Unit Price:</p>
-                                    <p class="text-xs text-slate-700 ">GHS 3,000.00</p>
-                                </div>
-                                <div class="flex items-center justify-between">
-                                    <p class="text-xs text-slate-600">Qty: </p>
-                                    <p class="text-xs text-slate-700 ">1</p>
-                                </div>
-                                <div class="flex items-center justify-between ">
-                                    <p class="text-sm text-slate-600">Amount: </p>
-                                    <p class="text-sm text-nowrap text-slate-700">GHS 3,000.00</p>
-                                </div>
+                            <div class="flex items-center justify-between pl-[0.5rem]">
+                                <p class="text-xs text-slate-600">Qty: </p>
+                                <p class="text-xs text-slate-700 ">1</p>
+                            </div>
+                            <div class="flex items-center justify-between pl-[0.5rem] ">
+                                <p class="text-sm text-slate-600">Amount: </p>
+                                <p class="text-sm text-nowrap text-slate-700">GHS 3,000.00</p>
                             </div>
                         </li>
-                        <li class="list-none border-b border-slate-200 px-2 py-[0.5rem]">
-                            <div class="flex justify-between items-center px-[0.5rem]">
-                                <p class="text-sm font-medium text-slate-600">Hostel Fees </p>
+                        <li class="list-none border-b border-slate-200 pl-1 py-[0.5rem]">
+                            <p class="text-sm font-medium text-slate-600 pl-[0.5rem] pb-[0.5rem]">Hostel Fees </p>
+                            <div class="flex items-center justify-between pl-[0.5rem]">
+                                <p class="text-xs text-slate-600 ">Unit Price:</p>
+                                <p class="text-xs text-slate-700 ">GHS 5,000.00</p>
                             </div>
-                            <div class="space-y-1 w-full p-[0.5rem]">
-                                <div class="flex items-center justify-between">
-                                    <p class="text-xs text-slate-600 ">Unit Price:</p>
-                                    <p class="text-xs text-slate-700 ">GHS 5,000.00</p>
-                                </div>
-                                <div class="flex items-center justify-between">
-                                    <p class="text-xs text-slate-600">Qty: </p>
-                                    <p class="text-xs text-slate-700 ">1</p>
-                                </div>
-                                <div class="flex items-center justify-between ">
-                                    <p class="text-sm text-slate-600">Amount: </p>
-                                    <p class="text-sm text-nowrap text-slate-700">GHS 5,000.00</p>
-                                </div>
+                            <div class="flex items-center justify-between pl-[0.5rem]">
+                                <p class="text-xs text-slate-600">Qty: </p>
+                                <p class="text-xs text-slate-700 ">1</p>
+                            </div>
+                            <div class="flex items-center justify-between pl-[0.5rem]">
+                                <p class="text-sm text-slate-600">Amount: </p>
+                                <p class="text-sm text-nowrap text-slate-700">GHS 5,000.00</p>
                             </div>
                         </li>
                     </ul>
@@ -105,23 +85,18 @@
                 <p class="text-sm text-nowrap font-bold text-slate-600">GHS 0.10</p>
             </div>
 
-            <div class="p-4 mt-4 ">
-                <div class="flex flex-col items-center gap-[0.1rem]">
-                    <p class="text-[20px] font-medium text-slate-600">Total</p>
-                    <p class="text-[25px] font-bold text-slate-900">GHS 5,150.20</p>
-                </div>
+            <div class="flex flex-col items-center gap-[0.1rem] p-4">
+                <p class="text-[20px] font-medium text-slate-600">Total</p>
+                <p class="text-[25px] font-bold text-slate-900">GHS 5,150.20</p>
             </div>
         </section>
 
         <section class="mt-8 space-y-2">
-            <button class="w-full bg-rose-500 hover:bg-rose-600 duration-300 transition-colors py-[0.5rem] rounded-full shadow-md">
-                <a href="" class="text-white uppercase font-bold text-sm block">
-                    Sign In
-                </a>
-            </button>
+            <a href="" aria-label="sign in to make payment" class="text-white uppercase text-center font-bold text-sm block w-full bg-rose-600 hover:bg-rose-500 duration-300 transition-colors py-[1rem] rounded-full shadow-md">
+                Sign In
+            </a>
 
             <p class="text-sm text-center text-gray-500">
-                <a href="#!" class="text-blue-600 underline font-bold"></a> 
                 to make payment
             </p>
         </section>
@@ -140,6 +115,5 @@
             </div>
         </section>
     </main>
-
 </body>
 </html>
